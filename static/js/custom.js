@@ -16,7 +16,7 @@
     //Fetch data from JSON
     const fetchData = async () => {
         console.log("globalData")
-        const response = await fetch('../data/airports.json')
+        const response = await fetch('data/airports.json')
         data = await response.json();
         globalData = data
         x = data
