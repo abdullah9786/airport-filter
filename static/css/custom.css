@@ -1,0 +1,194 @@
+body {
+    font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
+    margin: 0;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    text-align: left;
+    padding: 8px;
+    font-weight: 400;
+    height: 40px;
+}
+
+.table thead tr th {
+    font-weight: bold;
+}
+
+tr:nth-child(odd) {
+    background-color: #f2eeee;
+}
+table thead tr{
+    background-color: #ddd4d4 !important
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.pagination-text {
+    margin: 0 auto;
+}
+
+.left-arrow {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.right-arrow {
+    cursor: pointer;
+}
+
+.main {
+    margin: auto;
+    width: 80%;
+    padding: 30px;
+    border: 15px solid #dddddd;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.block-heading {
+    display: flex;
+    align-items: center;
+}
+
+.block h1 {
+    margin-top: 0;
+    font-size: 40px;
+    margin-right: auto;
+}
+
+.grey-text {
+    color: #dddddd;
+}
+
+.block-heading img {
+    width: 25px;
+}
+
+.filterByType label {
+    margin-right: 8px;
+    position: relative;
+    bottom: 1px;
+}
+
+.filterByType input {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+}
+
+.filter {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.filter h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.filterBySearch {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: auto;
+}
+
+.filterBySearch label {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.filterBySearch input {
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    margin-top: 5px;
+    font-size: 16px;
+    padding-bottom: 4px;
+}
+.blockouter{
+    display: flex;
+    flex-wrap: wrap;
+}
+.filter-block{
+    display: flex;
+    align-items: center;
+   margin-bottom: 8px;
+}
+@media only screen and (max-width: 768px){
+    .table{
+        overflow-y: scroll;
+    }
+    thead tr th:first-child{
+        min-width: 200px;
+    }
+    .filter{
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .main{
+        position: static;
+        transform: translate(0%, 0%);
+        width: 90%;
+        padding: 10px;
+        border-width: 5px;
+        margin: 2px;
+    }
+    .filterBySearch{
+        margin-left: 0;
+        width: 100%;
+        order: 1;
+    }
+    .filterByType{
+        order: 2;
+        margin-top: 20px;
+    }
+    .block h1{
+        font-size: 28px;
+    }
+    .filterBySearch label{
+        font-size: 16px;
+    }
+    .filterBySearch input{
+        font-size: 12px;
+    }
+    .filter h2{
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    .filterByType label{
+        font-size: 12px;
+    }
+    td, th{
+        font-size: 13px;
+    }
+    .block-heading img{
+        width: 18px;
+        position: relative;
+        bottom: 8px;
+    }
+    .fa-2x{
+        font-size: 1rem;
+    }
+    .pagination-text{
+        font-size: 13px;
+    }
+    .pagination{
+        margin-top: 10px;
+    }
+}

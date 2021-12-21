@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Airport Filter</title>
+    <link rel="stylesheet" href="static/css/custom.css">
+</head>
+
+<body>
+    <section class="main">
+        <div class="block">
+            <div class="block-heading">
+                <h1>Filter <span class="grey-text">airports</span> </h1>
+                <img src="static/images/square.png" alt="">
+            </div>
+            <div class="filter">
+                <div class="filterByType">
+                    <h2>Type</h2>
+                    <div class="blockouter">
+                        <div class="filter-block">
+                            <input type="checkbox" name="types" id="small" value="small">
+                            <label for="small">Small</label>
+                        </div>
+                        <div class="filter-block">
+                            <input type="checkbox" name="types" id="medium" value="medium">
+                            <label for="medium">Medium</label>
+                        </div>
+                        <div class="filter-block">
+                            <input type="checkbox" name="types" id="large" value="large">
+                            <label for="large">Large</label>
+                        </div>
+                        <div class="filter-block">
+                            <input type="checkbox" name="types" id="heliport" value="heliport">
+                            <label for="heliport">Heliport</label>
+                        </div>
+                        <div class="filter-block">
+                            <input type="checkbox" name="types" id="closed" value="closed">
+                            <label for="closed">Closed</label>
+                        </div>
+                        <div class="filter-block">
+                            <input type="checkbox" name="types" id="favourites" value="In your favourites">
+                            <label for="favourites">In your favourites</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="filterBySearch">
+                    <label for="search-input">Filter By search</label>
+                    <input type="text" name="" id="filterSearch">
+                </div>
+            </div>
+            <div class="table">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>ICAO</th>
+                            <th>IATA</th>
+                            <th>Elev.</th>
+                            <th>Lat.</th>
+                            <th>Long.</th>
+                            <th>Type</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="pagination">
+                <div class="left-arrow" onclick="previous()"><i class="fas fa-arrow-left fa-2x"></i></div>
+                <div class="pagination-text">
+                    showing <span id="start">1</span>-<span id="end">4</span> of <span id="totalResult"></span>
+                </div>
+                <div class="right-arrow" onclick="next()"><i class="fas fa-arrow-right fa-2x"></i></div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="static/js/custom.js"></script>
+
+
+</html>
